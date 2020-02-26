@@ -36,7 +36,7 @@ class MainFragment : BrowseSupportFragment() {
         Log.d(TAG, "Categories: $categories")
 
         categories.forEach { category ->
-            val listRowAdapter = ArrayObjectAdapter(StringPresenter()).apply {
+            val listRowAdapter = ArrayObjectAdapter(CardPresenter()).apply {
                 val moviesFromCategory = getMoviesByCategory(category)
                 Log.d(TAG, "moviesFromCategory: $moviesFromCategory")
 
